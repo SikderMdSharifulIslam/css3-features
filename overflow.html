@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        .box{
+            border: 3px solid slateblue;
+            width: 300px;
+            height: 300px;
+            overflow: auto;
+            /* overflow er onk gula value ache, x-axis, y-axis, hidden, scroll, auto, etc. jokkhon jeta lage use kora jabe */
+        }
+        p{
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 
+                ekhane fixed width diye space komiye nile text by default wrap hoye nicher line e chole jay.
+                sheta k off korte white-space: nowrap; use kora
+                overflow:hidden; dile 200px er baire kisu dekha jabena otherwise dekha jabe
+                text-overflow:ellipsis; dile 3 ta dot ashe end er agey.
+                p tag e title attribute e full text ta diye dile tooltip akare text show kore mouse nile.
+            */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis libero accusamus nisi quibusdam alias ea hic ipsam corporis nesciunt nemo.">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis libero accusamus nisi quibusdam alias ea hic ipsam corporis nesciunt nemo.
+        </p>
+        <!-- .box*2>h3{My Text Box $}+p>lorem200 -->
+        <div class="box">
+            <h3>My Text Box 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cum iusto nobis explicabo doloremque veritatis esse quia, praesentium suscipit delectus, itaque a perferendis dolore ducimus illo, sequi incidunt. Doloremque aliquam sed accusamus, facilis rerum natus corrupti, consequuntur incidunt laudantium dolorum repellat, autem sequi labore ea tempora nisi nesciunt. Aliquam, voluptatibus autem doloremque incidunt architecto quo doloribus cumque sapiente facilis esse dolorum nemo, pariatur aliquid dolor illum nobis, aspernatur atque ratione reprehenderit dolores suscipit et soluta iure sed. Cupiditate adipisci accusantium distinctio ad aliquam minima. Impedit officia rem modi nesciunt, enim nemo inventore labore at vitae incidunt obcaecati temporibus esse sit perspiciatis nihil ipsum, assumenda cupiditate voluptatum perferendis? Reiciendis voluptatem libero ut suscipit sint ab quod fugiat ex adipisci illo necessitatibus ullam eligendi, officiis neque consequuntur, amet dolore vero odit facilis, velit ipsa vel rem quae cumque. Magni voluptate sunt numquam quam at nihil veritatis blanditiis commodi harum quaerat id vitae nesciunt maxime praesentium ullam, quae deserunt nobis placeat quas sequi? Consequuntur quas ducimus exercitationem doloremque iste, consequatur nisi, deleniti ipsum asperiores ex veritatis maxime impedit, cumque recusandae. Expedita, placeat facere nesciunt ipsa eos voluptatum magnam eum architecto. Neque, at. Illum cumque nesciunt culpa modi quae dicta quas et omnis! Magnam.</p>
+        </div>
+        <div class="box">
+            <h3>My Text Box 2</h3>
+            <p>Repellat laboriosam iusto obcaecati rem ut. Laboriosam adipisci voluptatem commodi voluptatum dolorem enim amet quisquam, hic exercitationem magnam tenetur aut et, voluptas odio nihil iste! Atque facere neque minima, ab quis quam rerum assumenda reiciendis cum numquam similique explicabo, exercitationem sunt nihil adipisci eaque laudantium perferendis, magnam vitae! Officia vero dolorum tempora voluptatem at quisquam illum mollitia, quam sit esse autem modi dolore ipsam ut doloribus praesentium porro asperiores sint quidem dolorem error dolor aliquid iure tempore. Voluptatum soluta dolore ipsum nihil officiis, quaerat numquam error odio corrupti? Odio blanditiis dolorem fuga alias doloremque itaque, obcaecati repellendus voluptates veniam vero distinctio, cum quisquam id est natus consequuntur adipisci culpa porro tempore. At molestiae ea ducimus quos, provident distinctio ipsum culpa saepe minima ipsa assumenda animi fugit sequi necessitatibus facilis similique ipsam earum quis, in cumque soluta illum voluptas corrupti dolores! Suscipit expedita quia facere magni esse voluptate? Corrupti consequuntur totam numquam nam expedita dolore repudiandae quasi. Consequuntur ex magnam, fugit beatae incidunt dignissimos. Illo nam numquam cupiditate suscipit eius hic praesentium earum, exercitationem voluptatem dolore reprehenderit, saepe culpa iusto quidem! Quis vel enim ipsa dolorum minima aliquam tempore nostrum ratione cumque nisi numquam, iste quod deserunt, possimus, blanditiis corrupti modi!</p>
+        </div>
+    </section>
+</body>
+</html>
