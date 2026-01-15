@@ -40,6 +40,10 @@
             height: 300px;
             border: 2px solid slateblue;
             background-color: burlywood;
+            position: absolute;
+            top: 0;
+            right: 0;
+            /* animation-play-state: paused; */
         }
         .ball{
             width: 100px;
@@ -49,6 +53,10 @@
             position: relative;
             /* animation: ping-pong 2s ease-in-out 1s infinite alternate; */
             animation: bounce 3s ease-in-out 1s infinite alternate;
+        }
+        .stage:hover .ball{
+            animation-play-state: paused;
+            /* stage er moddhe mouse nile animation pause hoye jabe */
         }
     </style>
 </head>
