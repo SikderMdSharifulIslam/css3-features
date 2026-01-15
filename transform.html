@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container, .inner{
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            background-color: antiquewhite;
+            border: 2px solid tomato;
+        }
+        .inner{
+            background-color: aquamarine;
+            border: 2px solid slateblue;
+            /* transform: scale(0.25); */ 
+            /* transform: scale er value x-axis and y-axis alada aladao deya jay (x,y) evabe */
+            /* transform: rotate(45deg); */
+            /* rotate er value positive dile clock-wise ghurbe, negative dile anti-clock wise ghurbe */
+            /* transform: translateX(100px); */
+            /* translate er kaj hosse x-axis ba y-axis wise position change kora */
+            /* transform: rotate(-45deg) scale(0.75) translateX(100px); */
+            /* sob gula style akshathe dite chaile same line e dite hobe, otherwise CSS same class er moddhe last jei style pay sheta k hold kore */
+        }
+        .inner:hover{
+            transform: rotate(-45deg) scale(0.75) translateX(100px);
+        }
+    </style>
+</head>
+<body>
+    <h2>Explore Transform and Translate of CSS3</h2>
+    <!-- .container*3>.inner{Inner $} -->
+    <div class="container">
+        <div class="inner">Inner 1</div>
+    </div>
+    <div class="container">
+        <div class="inner">Inner 2</div>
+    </div>
+    <div class="container">
+        <div class="inner">Inner 3</div>
+    </div>
+</body>
+</html>
